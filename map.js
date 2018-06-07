@@ -1,7 +1,7 @@
-var map = function(array, transform) {
+var map = function(array, fn) {
     let mapped = [];
     for (let element of array) {
-      mapped.push(transform(element));
+      mapped.push(fn(element));
     }
     return mapped;
   };
